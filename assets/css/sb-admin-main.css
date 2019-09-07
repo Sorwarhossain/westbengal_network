@@ -1,0 +1,37 @@
+.bg-gradient-primary {
+    background-color: #27ae60;
+    background-image: none;
+}
+#profile_upgrade h4 {
+    margin-bottom: 0px;
+}
+.brand_color_bg {
+    background-color: #27ae60;
+}
+.brand_color_bg:hover {
+    background-color: #27ae60;
+}
+.item_col {
+    text-align: center;
+    border: 1px solid #e5e5e5;
+}
+.item_heading_col {
+    background-color: #27ae60;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    text-transform: uppercase;
+}
+.item_heading_col h3 {
+    margin: 0;
+}
+
+
+@media (min-width: 768px) {
+    .sidebar .nav-item .nav-link {
+        padding: 0.7rem 1rem;
+    }
+    #profile_upgrade .form-group {
+        margin-right: 20px;
+    }
+}
