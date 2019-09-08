@@ -1,3 +1,23 @@
+/* common styles */
+.brand_btn {
+    padding: 15px 60px;
+    display: inline-block;
+    color: #fff;
+    outline: none;
+    text-transform: uppercase;
+    background: #8e44ad;
+    color: #fff;
+    box-shadow: 0 6px #560f74;
+    transition: none;
+}
+.brand_btn:hover,
+.brand_btn:focus, 
+.brand_btn:active {
+    box-shadow: 0 4px #560f74;
+    top: 2px;
+    color: #fff;
+}
+
 .bg-gradient-primary {
     background-color: #27ae60;
     background-image: none;
@@ -10,6 +30,31 @@
 }
 .brand_color_bg:hover {
     background-color: #27ae60;
+}
+.level-buttons {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.level-buttons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.level-buttons ul li {
+    display: inline-block;
+    margin: 15px 10px;
+}
+.level_title span {
+    background-color: #8e44ad;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.level_title {
+    color: #111;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0;
 }
 
 
