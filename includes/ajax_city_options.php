@@ -12,11 +12,13 @@ if(isset($_POST["country"])){
         "bangladesh" => $bangladesh_cities,
         "india" => $india_cities
     );
-     
+    
+    echo "<option value=''>Select State</option>";
     // Display city dropdown based on country name
-    if($country !== 'Select'){
+    if(!empty($country)){
+        
         foreach($countryArr[$country] as $value){
-            echo "<option>". $value . "</option>";
+            echo "<option value='". strtolower($value) ."'>". $value . "</option>";
         }
     } 
 }

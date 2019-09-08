@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/videopopup.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -31,22 +31,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md">
-                    <div class="login-form">
-                        <form action="" id="login_form">
-                            <div class="form-row">
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" placeholder="Username/Email">
-                                </div>
-                                <div class="col-sm-5">
-                                    <input type="password" class="form-control" placeholder="Password">
-                                </div>
-                                <div class="col-sm-2">
-                                    <input type="submit" class="btn btn-primary" value="Login">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-md text-right">
+                    <button type="button" class="btn brand_btn" data-toggle="modal" data-target="#login_modal">Login</button>
+                    <button type="button" class="btn brand_btn ml-md-2" data-toggle="modal" data-target="#register_modal">Register</button>
                 </div>
             </div>
         </div>
@@ -59,24 +46,16 @@
 
             <div class="slider-items" style="background-image: url(assets/images/slider-bg-1.jpg)">
                 <div class="slider-overlay"></div>
-                <div class="slider-content">
+                <!-- <div class="slider-content">
                     <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
                     <a href="#" class="btn brand_btn">Register Now</a>
-                </div>
+                </div> -->
             </div>
             <div class="slider-items" style="background-image: url(assets/images/slider-bg-2.jpg)">
                 <div class="slider-overlay"></div>
-                <div class="slider-content">
-                    <h2>Contrary to popular belief, Lorem Ipsum is not simply random text.</h2>
-                    <a href="#" class="btn brand_btn">Register Now</a>
-                </div>
             </div>
             <div class="slider-items" style="background-image: url(assets/images/slider-bg-3.jpg)">
                 <div class="slider-overlay"></div>
-                <div class="slider-content">
-                    <h2>It is a long established fact that a reader will be distracted by the readable content</h2>
-                    <a href="#" class="btn brand_btn">Register Now</a>
-                </div>
             </div>
         </div>
     </section>
@@ -85,99 +64,76 @@
     <!-- main content area -->
     <section id="main-content">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md pr-lg-20">
-                    <div class="featured-video" style="background-image: url(assets/images/Video-Featured.jpg)">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-title text-center">
+                        <h2 class="text-uppercase">Watch Some Pro Videos</h2>
+                        <p>For watching these videos you will need a access. You can get that access from some of our player and this could be changed anytime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 text-center">
+                    <button id="watch_video" class="btn brand_btn">Watch Pro Videos</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-video" style="background-image: url(assets/images/video-1.jpg)">
                         <div class="video_overlay"></div> 
-                        <a href="javascript:void(0)" id="trigger" class="trigger_video"><img src="assets/images/play-icon.png" alt=""></a>
-                        <div id="vidBox">
-                            <div id="videCont">
-                                <video autoplay id="demo" loop controls>
+                        <a href="https://www.youtube.com/watch?v=6fxAtcXD2Mk" id="trigger-1" class="trigger_video"><img src="assets/images/play-icon.png" alt=""></a>
+                        <!-- <div id="vidBox-1">
+                            <div id="videCont-1">
+                                <video autoplay id="video-1" loop controls>
                                     <source src="assets/videos/Placeholder.mp4" type="video/mp4">
                                 </video>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
-                <div class="col-md pl-lg-20">
-                    <div class="register-form">
-                        <form action="" id="registration_form">
-                            <div class="form-row">
-                                <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="firstname">First Name <span class="required">*</span></label>
-                                        <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name">
-                                    </div>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="lastname">Last Name <span class="required">*</span></label>
-                                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name">
-                                    </div>
-                                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-video" style="background-image: url(assets/images/video-2.jpg)">
+                        <div class="video_overlay"></div> 
+                        <a href="https://www.youtube.com/watch?v=cOtodCLYlSA" id="trigger-2" class="trigger_video"><img src="assets/images/play-icon.png" alt=""></a>
+                        <!-- <div id="vidBox-2">
+                            <div id="videCont-2">
+                                <video autoplay id="videCont-2" loop controls>
+                                    <source src="assets/videos/Placeholder.mp4" type="video/mp4">
+                                </video>
                             </div>
-                            <div class="form-row">
-                                <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="email_address">Email Address <span class="required">*</span></label>
-                                        <input type="text" name="email_address" id="email_address" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="register_key">Register Key <span class="required">*</span></label>
-                                        <input type="text" name="register_key" id="register_key" class="form-control" placeholder="Register Key">
-                                    </div>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="phone_number">Phone Number <span class="required">*</span></label>
-                                        <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="Phone">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="country">Country <span class="required">*</span></label>
-                                        <select name="country" id="country" class="form-control">
-                                            <option value="">Select Country</option>
-                                            <option value="bangladesh">Bangladesh</option>
-                                            <option value="india">India</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="phone">State/Division <span class="required">*</span></label>
-                                        <select name="state" id="state" class="form-control">
-                                            <option value="">Select State</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="reg_password">Password <span class="required">*</span></label>
-                                        <input type="password" name="reg_password" id="reg_password" class="form-control" placeholder="Password">
-                                    </div>
-                                </div>
-                                <div class="col-sm">
-                                    <div class="form-group">
-                                        <label for="reg_confirm_password">Confirm Password <span class="required">*</span></label>
-                                        <input type="password" name="reg_confirm_password" id="reg_confirm_password" class="form-control" placeholder="Confirm Password">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn brand_btn">Register</button>
-                        </form>
+                        </div> -->
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-video" style="background-image: url(assets/images/video-3.jpg)">
+                        <div class="video_overlay"></div> 
+                        <a href="https://www.youtube.com/watch?v=dx7Sgnqp-6A" id="trigger-3" class="trigger_video"><img src="assets/images/play-icon.png" alt=""></a>
+                        <!-- <div id="vidBox-3">
+                            <div id="videCont-3">
+                                <video autoplay id="video-3" loop controls>
+                                    <source src="assets/videos/Placeholder.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="featured-video" style="background-image: url(assets/images/video-4.jpg)">
+                        <div class="video_overlay"></div> 
+                        <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" id="trigger-4" class="trigger_video"><img src="assets/images/play-icon.png" alt=""></a>
+                        <!-- <div id="vidBox-4">
+                            <div id="videCont-4">
+                                <video autoplay id="video-4" loop controls>
+                                    <source src="assets/videos/Placeholder.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </section>
@@ -200,13 +156,171 @@
         </div>
     </footer>
 
+
+<!-- Login Modal -->
+<div class="modal fade custom_modal" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="login_modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="login_modalLabel">Login To Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="login-form">
+                    <form action="" id="login_form" class="styled_form">
+                        <div class="form-row">
+                            <div class="col-sm-12 mb-2">
+                                <div class="form-group">
+                                    <label for="username">Username/Email</label>
+                                    <input type="text" id="username" class="form-control" placeholder="Username/Email">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-2">
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input id="password" type="password" class="form-control" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <input type="submit" class="btn brand_btn" value="Login">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Register Modal -->
+<div class="modal fade custom_modal" id="register_modal" tabindex="-1" role="dialog" aria-labelledby="register_modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="register_modalLabel">Regsiter New Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="register-form">
+                    <form action="" id="registration_form" class="styled_form">
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="firstname">First Name <span class="required">*</span></label>
+                                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="lastname">Last Name <span class="required">*</span></label>
+                                    <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="email_address">Email Address <span class="required">*</span></label>
+                                    <input type="text" name="email_address" id="email_address" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="register_key">Register Key <span class="required">*</span></label>
+                                    <input type="text" name="register_key" id="register_key" class="form-control" placeholder="Register Key">
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="phone_number">Phone Number <span class="required">*</span></label>
+                                    <input type="text" name="phone_number" id="phone_number" class="form-control" placeholder="Phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="gendar">Gendar <span class="required">*</span></label>
+                                    <select name="gendar" id="gendar" class="form-control">
+                                        <option value="">Select Gendar</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="nid_number">NID Number</label>
+                                    <input type="text" name="nid_number" id="nid_number" class="form-control" placeholder="NID Number">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="country">Country <span class="required">*</span></label>
+                                    <select name="country" id="country" class="form-control">
+                                        <option value="">Select Country</option>
+                                        <option value="bangladesh">Bangladesh</option>
+                                        <option value="india">India</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="phone">State/Division <span class="required">*</span></label>
+                                    <select name="state" id="state" class="form-control">
+                                        <option value="">Select State</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="reg_password">Password <span class="required">*</span></label>
+                                    <input type="password" name="reg_password" id="reg_password" class="form-control" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="reg_confirm_password">Confirm Password <span class="required">*</span></label>
+                                    <input type="password" name="reg_confirm_password" id="reg_confirm_password" class="form-control" placeholder="Confirm Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <p><span class="notice">Note: </span>Please provide your bKash number as phone number</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn brand_btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
 
     <!-- Including js files -->
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/js/slick.js"></script>
-    <script src="assets/js/videopopup.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 </html>

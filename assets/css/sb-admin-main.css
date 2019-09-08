@@ -11,20 +11,7 @@
 .brand_color_bg:hover {
     background-color: #27ae60;
 }
-.item_col {
-    text-align: center;
-    border: 1px solid #e5e5e5;
-}
-.item_heading_col {
-    background-color: #27ae60;
-    color: #fff;
-    text-align: center;
-    padding: 8px;
-    text-transform: uppercase;
-}
-.item_heading_col h3 {
-    margin: 0;
-}
+
 
 
 @media (min-width: 768px) {
